@@ -7,3 +7,15 @@
 body {
     font-family: var(--body-font);
 }
+
+.home__social--after::after {
+    content: '';
+    width: 2px;
+    height: 32px;
+    background-color: rgb(107 114 128);
+    transform: translateX(6px);
+}
+
+.home__scroll {
+    transform: rotate(90deg);
+}

@@ -15,11 +15,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-900">
-    <header class="fixed top-0 left-0 w-full h-14">
+    <header class="fixed top-0 left-0 w-full h-14 z-50">
         <nav class="flex justify-between items-center">
-            <a class="font-medium">John Doe</a>
+            <a class="font-medium">Jane Doe</a>
+
+            <!-- Navbar -->
             <div class="fixed bottom-4 w-full">
-                <div class="bg-gray-800 w-11/12 mx-auto rounded-full py-4 px-10">
+                <div class="bg-gray-800 w-11/12 mx-auto rounded-full py-4 px-10 opacity-95">
                     <ul class="flex justify-between items-center text-white">
                         <li class="flex justify-center items-center h-8 w-8 rounded-full bg-gray-500 shadow-md">
                             <a>
@@ -50,14 +52,52 @@
                 </div>                
             </div>
 
-
             <!-- Mode button -->
             <i class="fa-regular fa-moon"></i>            
         </nav>
     </header>
 
-    <main>
+    <main class="overflow-hidden">
+        <section id="home" class="relative grid min-h-screen content-center">
+            <div class="text-white text-center">
+                <div class="mb-6">
+                    <span>Hello, I'm</span>
+                    <h1 class="mt-1 text-3xl font-bold">Jane Doe</h1>
+                    <h3 class="font-bold">Frontend Developer</h3>                    
+                </div>
+                <div class="mb-12">
+                    <a>Download CV</a>
+                    <a>About me</a>
+                </div>
+                <div class="w-full flex justify-center">
+                    <div class="w-7/12 overflow-hidden rounded-t-full" >
+                        <img src="./assets/images/pexels-moose-photos-1036623_edited.jpg" class="object-cover rounded-b-3xl h-72">
+                    </div>
+                </div>
+            </div>
+                
+            <div class="absolute left-3 bottom-24 flex flex-col text-gray-500 gap-y-2 home__social--after">
+                <a href="https://linkedin.com/in/robertoariellatorraca"
+                    class="hover:text-white">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/RobertoLatorraca"
+                    class="hover:text-white">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+            
+            <div class="absolute -right-6 bottom-32 text-gray-500">
+                <a class="flex flex-col text-center gap-y-12">
+                    <i class="fa-solid fa-computer-mouse"></i>
+                    <span class="rotate-90">Scroll Down</span>
+                </a>                        
+            </div>
+        </section>
 
+        <section id="about"></section>
+        <section id="skills"></section>
+        <section id="services"></section>
     </main>
 </body>
 </html>
