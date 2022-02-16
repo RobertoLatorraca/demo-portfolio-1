@@ -13,7 +13,7 @@ body {
     width: 2px;
     height: 32px;
     background-color: rgb(107 114 128);
-    transform: translateX(6px);
+    transform: translateX(7px);
 }
 
 .home__scroll {
