@@ -17,7 +17,7 @@
 <body class="bg-gray-900">
     <header class="fixed top-0 left-0 w-full h-14 z-50">
         <nav class="flex justify-between items-center">
-            <a class="font-medium">Jane Doe</a>
+            <a class="font-medium text-rose-300">Jane Doe</a>
 
             <!-- Navbar -->
             <div class="fixed bottom-4 w-full">
@@ -53,11 +53,11 @@
             </div>
 
             <!-- Mode button -->
-            <i class="fa-regular fa-moon"></i>            
+            <i class="fa-regular fa-moon text-white"></i>            
         </nav>
     </header>
 
-    <main class="overflow-hidden">
+    <main class="overflow-x-hidden">
         <section id="home" class="relative grid min-h-screen content-center">
             <div class="text-white text-center">
                 <div class="mb-6">
@@ -95,7 +95,48 @@
             </div>
         </section>
 
-        <section id="about"></section>
+        <section id="about" class="text-center text-gray-500">
+            <span class="text-sm text-gray-500">My Intro</span>
+            <h2 class="text-rose-300 text-xl font-bold mb-8">About Me</h2>
+
+            <div class="grid">
+                <div class="w-2/3 overflow-hidden rounded-xl justify-self-center mb-8">
+                    <img src="./assets/images/pexels-moose-photos-1036623_edited.jpg" class="object-cover h-60">
+                </div>
+
+                <div class="grid grid-cols-3 mb-8 mx-4 gap-x-3">
+                    <div class="bg-gray-800 rounded-md text-sm py-2 px-1">
+                        <i class="fa-solid fa-award text-rose-300 text-xl mb-1"></i>
+                        <h3 class="text-white text-base font-medium">Experience</h3>
+                        <span>8 Years Working</span>                        
+                    </div>
+                    <div class="bg-gray-800 rounded-md text-sm py-2 px-1">
+                        <i class="fa-solid fa-briefcase text-rose-300 text-xl mb-1"></i>
+                        <h3 class="text-white text-base font-medium">Completed</h3>
+                        <span>36 + Projects</span>                        
+                    </div>
+                    <div class="bg-gray-800 rounded-md text-sm py-2 px-1">
+                        <i class="fa-solid fa-headset text-rose-300 text-xl mb-1"></i>
+                        <h3 class="text-white text-base font-medium">Support</h3>
+                        <span>Online 24/7</span>                        
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum, neque sit amet placerat dapibus, elit orci facilisis massa, ut scelerisque leo nisi sit amet lectus.
+                    </p>                    
+                </div>
+
+                <div>
+                    <a class="bg-rose-300 px-3 py-2 rounded-md border-solid border-2 border-rose-300 text-gray-500 hover:bg-rose-400">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
         <section id="skills"></section>
         <section id="services"></section>
     </main>
