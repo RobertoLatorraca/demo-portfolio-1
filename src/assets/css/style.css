@@ -23,3 +23,9 @@ body {
 .home__scroll {
     transform: rotate(90deg);
 }
+
+.card {
+    @apply
+    bg-gray-800
+    rounded-lg;
+}
